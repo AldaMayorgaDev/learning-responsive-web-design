@@ -1,0 +1,13 @@
+/* Crear 3 columnas responsive en Flex-box utilizando el enfoque Mobile first */
+
+@media (min-width: 768px) { 
+    .tres-columnas-flex{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .columna{
+        flex-grow: 1;
+        
+    }
+}

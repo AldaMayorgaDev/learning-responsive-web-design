@@ -1,6 +1,9 @@
 /* Desktop First */
 /* Este enfoque nos dice que la maquetación se debe iniciar desde un tamaño más grande; es decir, vas a comenzar a darle estilos a tu proyecto desde un tamaño de escritorio y con @media queries adapataras los estilos a un tamaño más paqueño (movil). */
 
+
+/* NOTA IMPORTANTE: Cuando trabajas en Desktop First, tienes que ir colocando los media queries del más grande al más pequeño. */
+
 /* Estilos para desktop */
 .oferta{
     background-color: #00446e;
@@ -18,6 +21,12 @@
 /* Cuando se trabaja con mobie first, el @media() debera tener un max-width; es decir, si la pantalla tiene un ancho maximo de 600px, (De 0px hasta 600px) se deberan aplicar los estilos de ese media querie */
 
 /* estilos para mobie */
+@media (max-width: 800px) {
+    .oferta{
+        max-width: 4rem;
+    }
+}
+
 @media (max-width: 600px) {
     .oferta{
         max-width: 100%;

@@ -1,0 +1,21 @@
+/* Contendor responsive */
+/* Para crear un contendor resonsive que se adapate a nuestra pantalla una opcion es darle un width con porcentaje, es decir, que el width vaya adaptandose a la pantalla con un porcentaje.
+
+Si deseamos que ese contendor no revase una medida en especifico es posible asignarle un max-width, (un ancho maximo), con esto nos aseguramos que ese contendor no pase esa medida.
+
+Es remomendable ocupar width y max-width juntos, asi indicamos un ancho maximo y cuando la pantalla se reduzca, con width ocupara el porcetaje que indicamos. 
+
+Ejemplo:
+    width: 80%
+    max-width: 1000px;
+
+Con este codigo, idnicamos que el contenedor tiene un ancho maximo de 1000px, es decir no puede crecer mas que 1000px, y si hacemos pequeña la pantalla siemre tomara el 90% de esta, sin importar el tamaño de la pantalla.
+*/
+
+.contenedor-responsive{
+    background-color: #fff;
+    width: 90%;
+    max-width: 1000px;
+    height: 400px;
+    margin-inline: auto;
+}

@@ -11,8 +11,15 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="./css/001.css"> -->
-   <!--  <link rel="stylesheet" href="./css/002.css"> -->
-    <link rel="stylesheet" href="./css/003.css">
+    <!--  <link rel="stylesheet" href="./css/002.css"> -->
+    <!--  <link rel="stylesheet" href="./css/003.css"> -->
+    <!-- <link rel="stylesheet" href="./css/004.css"> -->
+    <!-- <link rel="stylesheet" href="./css/005.css"> -->
+    <!-- <link rel="stylesheet" href="./css/006.css"> -->
+    <!-- <link rel="stylesheet" href="./css/007.css"> -->
+    <!-- <link rel="stylesheet" href="./css/008.css"> -->
+    <!-- <link rel="stylesheet" href="./css/009.css"> -->
+    <link rel="stylesheet" href="./css/010.css">
     
 </head>
 <body>
@@ -81,10 +88,40 @@
         <img src="img/imagen.jpg" alt="imagen responsive" >
 
         <h2>Formatos Modernos</h2>
-
+        <picture>
+            <source srcset="./img/imagen.avif" type="image/avif" />
+            <source srcset="./img/imagen.webp" type="image/webp" />
+            <img src="./img/imagen.jpg" alt="imagen" loading="lazy" />
+        </picture>
 
         <h2>Formatos Modernos con SRC SET</h2>
+        <picture>
+            <source
+                sizes="1920w, 1280w, 640w"
+                srcset="./img/imagen.avif 1920w,
+                        ./img/imagen-1000.avif 1280w,
+                        ./img/imagen-700.avif 640w"
+                type="image/avif"   
+            />
 
+            <source
+                sizes="1920w, 1280w, 640w"
+                srcset="./img/imagen.webp 1920w,
+                        ./img/imagen-1000.webp 1280w,
+                        ./img/imagen-700.webp 640w"
+                type="image/avif"   
+            />
+            <source
+                sizes="1920w, 1280w, 640w"
+                srcset="./img/imagen.jpg 1920w,
+                        ./img/imagen-1000.jpg 1280w,
+                        ./img/imagen-700.jpg 640w"
+                type="image/avif"   
+            />
+            <img loading="lazy" src="./img/imagen.jpg" alt="imagen">
+
+            
+        </picture>
     </div>
 
 </body>

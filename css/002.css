@@ -1,6 +1,10 @@
 /* Mobile First */
 /* Este enfoque nos dice que la maquetación se debe iniciar desde un tamaño más pequeño; es decir, vas a comenzar a darle estilos a tu proyecto desde un tamaño movil y con @media queries adapataras los estilos a un tamaño más grande. */
 
+
+/* NOTA IMPORTANTE: Cuando trabajas en Mobile First, tienes que ir colocando los media queries del  más pequeño al más grande. */
+
+
 /* Estilos para mobie */
 .oferta{
     background-color: #00446e;

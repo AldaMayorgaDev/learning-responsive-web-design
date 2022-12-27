@@ -1,0 +1,9 @@
+/* Crear 3 columnas responsive en Flex-box utilizando el enfoque Mobile first */
+
+@media (min-width: 768px) { 
+    .tres-columnas-grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+}

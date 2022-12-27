@@ -1,0 +1,9 @@
+/* Imágenes Responsive */
+/* Este un snippet que permite a las imagenes ser responsivas, en el indicamos que su anoco maximo siempre sera el 100% de su contendor y con el display:block quitamos un lijero margen abajo de las imagenes, de esta forma queda visualmente correcta
+
+NOTA IMPORTANTE: Este snippet siempre importarlo en los proyectos
+*/
+img{
+    max-width: 100%;
+    display: block;
+}
