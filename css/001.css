@@ -1,0 +1,38 @@
+.oferta{
+    background-color: #00446e;
+    padding: 2rem;
+    text-align: center;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.precio{
+    font-size: 6rem;
+    margin: 0;
+}
+
+/* media queries */
+/* Sintaxis:
+
+    @media (max-width: XYZpx){
+        reglas CSS a aplicar{}
+    }
+
+    NOTA: el max-width indica el valor maximo que puede tenr la pantalla para aplicar esas reglas, es decir; que mientras la pantalla sea menor o igual a ese valor, se aplicaran esos estilos
+
+    Ejemplo:
+    @media (max-width: 600px){
+        body {
+            background-color: red;
+        }
+    }
+    Este codigo nos dice, que mientras la pantalla sea menor a 600px, el color de fondo sera rojo, porque su max-width (Ancho maximo) es de 600px.
+*/
+@media (max-width: 600px){
+    .oferta{
+        max-width: 30rem;
+    }
+    .precio{
+        font-size: 3rem;
+    }
+}

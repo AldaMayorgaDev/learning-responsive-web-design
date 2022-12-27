@@ -1,0 +1,36 @@
+/* Mobile First */
+/* Este enfoque nos dice que la maquetación se debe iniciar desde un tamaño más pequeño; es decir, vas a comenzar a darle estilos a tu proyecto desde un tamaño movil y con @media queries adapataras los estilos a un tamaño más grande. */
+
+/* Estilos para mobie */
+.oferta{
+    background-color: #00446e;
+    padding: 2rem;
+    text-align: center;
+}
+
+.precio{
+    font-size: 4rem;
+    margin: 0;
+}
+
+/* Cuando se trabaja con mobie first, el @media() debera tener un min-width; es decir, si la pantalla tiene un ancho minimo de 600px, (600px en adelante) se deberan aplicar los estilos de ese media querie */
+
+/* Estilos para desktop */
+@media (min-width: 600px){
+    .oferta{
+        background-color: blueviolet;
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+    .precio{
+        font-size: 2rem;
+    }
+}
+
+/* de 750ox en adelante */
+@media(min-width: 750px){
+    .oferta{
+        max-width: 60rem;
+        background-color: tomato;
+    }
+}
